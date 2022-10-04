@@ -7,6 +7,7 @@
 # 3 -> [2, 3, 5, 6] => [12, 15]
 
 numbers = [2, 3, 4, 5, 6] 
+
 composition_num = []
 for i in range(len(numbers)):
     if i < len(numbers)/2:
