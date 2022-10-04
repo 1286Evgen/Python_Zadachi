@@ -10,8 +10,8 @@ for num in range(-N, N+1):
 print(list_N)
 
 with open('numbers.txt') as file:
-    x = int(file.readline())
+    x = int(file.readline()) 
     y = int(file.readline())
-print(list_N[x]*list_N[y]) # перемножили 2 и 6 элемент
+print(list_N[x]*list_N[y]) # перемножили 2 и 6 элемент списка
 
 
