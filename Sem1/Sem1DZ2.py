@@ -9,8 +9,8 @@ for x in [True, False]:
         for z in [True, False]:
             if not(x or y or z) != (not x) and (not y) and (not z):
                 print('выражение не верно')
-                trigger = False
                 break
+                trigger = False   
 
 if trigger:
     print('выражение верно')
