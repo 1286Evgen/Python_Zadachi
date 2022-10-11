@@ -9,7 +9,7 @@ for num in range(-N, N+1):
     list_N.append(int(num))
 print(list_N)
 
-with open('numbers.txt') as file:
+with open('Sem3Primer_1.txt') as file:
     x = int(file.readline()) 
     y = int(file.readline())
 print(list_N[x]*list_N[y]) # перемножили 2 и 6 элемент списка
