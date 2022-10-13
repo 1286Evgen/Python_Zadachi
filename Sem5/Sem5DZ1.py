@@ -12,6 +12,7 @@ new_text = []
 for word in split_line:
     if word.find("абв") == -1:
         new_text.append(word)
+         
 print("сочетание букв -абв- не содержиться в следующих словах:")
 print(' '.join(new_text))
 
