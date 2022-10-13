@@ -11,15 +11,16 @@
 
 from random import randint
 
+print()
 while True:
     try:
-        all_candies = int(input('Введите количество конфет больше 50: '))
-        if all_candies > 50:
+        all_candies = int(input('Введите количество конфет для игры: '))
+        if all_candies > 49:
             break
         else:
-            print('Мало конфет для игры')
+            print('Мало конфет для игры, введи хотябы 50')
     except:
-            print("Ошибка - это не число")
+        print("Ошибка - это не число")
 print()
 
 lot = randint(1, 2)
@@ -44,17 +45,33 @@ while num_cand > 0:
         lot = 2
         print()
 
+# игра с человеком
+
+#    else:
+#        while True:
+#            try:
+#                cand_2_pl = int(input('Игрок № 2, возьмите от 1 до 28 конфет: '))
+#                if 0 < cand_2_pl < 29:
+#                    break
+#                else:
+#                    print('Игрок № 2, попробуйте еще раз: ')
+#            except:
+#                print("Ошибка - это не число")
+#        num_cand = num_cand - cand_2_pl
+#        lot = 1
+#        print()
+
+# игра с ботом   
+
     else:
-        while True:
-            try:
-                cand_2_pl = int(input('Игрок № 2, возьмите от 1 до 28 конфет: '))
-                if 0 < cand_2_pl < 29:
-                    break
-                else:
-                    print('Игрок № 2, попробуйте еще раз: ')
-            except:
-                print("Ошибка - это не число")
+        cand_2_pl = randint(1, 29)
+        print(f'Игрок № 2, возьмите от 1 до 28 конфет: {cand_2_pl}')
         num_cand = num_cand - cand_2_pl
         lot = 1
         print()
-print(f"Выиграл игрок № {lot}, ему достается все {all_candies} конфет")
+
+if lot == 1:
+    print(f"Выиграл игрок № 2, ему достается все {all_candies} конфет")
+else:
+    print(f"Выиграл игрок № 1, ему достается все {all_candies} конфет")
+print()
